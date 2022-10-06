@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Noto Sans JP',"Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.background{
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: calc(10 * 1px) calc(10 * 1px);
+    background-color: #dacebf;
+    color:#c0ae9a;
+}
+
+
+
+
+
+/*header*/
+
+.header{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    color: #888;
+    background-color: rgba(17, 17, 17, 0.85);
+}
+.header > h1{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header >h1 >a{
+    font-size: 20px;
+    color: #888;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+}
+.header >h1> a:hover{
+    border-bottom: 2px solid #888;
+}
+
+.header-right{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-item > a{
+    display: block;
+    padding: 10px;
+    color:#888;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+}
+.header-item > a:hover{
+    border-bottom: 2px solid #888;
+}
+
+
+
+
+
+/*メイン*/
+
+.main{
+    width: 100%;
+    padding: 60px 60px 20px 60px;
+}
+@media screen and (max-width:768px){
+    .main{
+        text-align: center;
+        padding: 60px 0 0 0;
+    }
+}
+.main > h1{
+    font-size: 40px;
+    color: #775b3f;
+
+    border-bottom: solid 3px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: normal;
+}
+.main>h1:before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #775b3f;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+@media screen and (max-width: 768px){
+    .main > h1{
+        font-size: 28px;
+        width: 90%;
+        left: 5%;
+    }
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+@media screen and (max-width:768px){
+    .top{
+        display: block;
+        padding: 10px 0 0 0;
+        margin: 0 0 50px 0;
+    }
+}
+.author{
+    font-size: 25px;
+    color: #3a1f00;
+}
+.title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #3a1f00;
+}
+
+.img{
+    margin: 30px;
+ }
+ .info{
+     margin: 30px;
+ }
+@media screen and (max-width:768px){
+    .author{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .img{
+        margin: 20px;
+    }
+    .info{
+        margin: 20px;
+    }
+    .top>.img{
+        
+    }
+}
+
+
+
+
+
+
+
+/*サブ*/
+.sub{
+    background: #775b3f;
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+
+    background-image: linear-gradient(to top, #775b3f, #775b3f 28px, #604326 28px, #604326 );
+    background-size: 100% 30px;
+}
+
+
+.sub > h1{
+    margin: 10px 10px 10px 35px;
+    color: #d0bca7;
+
+    font-weight: normal;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    display: inline-block;
+}
+
+@media screen and (max-width:768px){
+    .sub{
+        text-align: center;
+    }
+   
+    .sub >h1{
+        margin: 20px 0;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+.grid{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-col-2 > .grid-item{
+    width: 50%;
+}
+@media screen and (max-width:768px){
+    .grid{
+        flex-direction: column;
+    }
+}
+
+.item{
+    display: flex;
+    margin: 0px 20px 10px 20px;
+}
+.subinfo > .author{
+    font-size: 15px;
+    color: #d0bca7;
+} 
+.subinfo>.title{
+    font-size: 27px;
+    color: #d0bca7;
+    font-weight: normal;
+}
+.item>.img{
+    margin: 0 15px 15px 15px;
+}
+@media screen and (max-width:768px){
+    .subinfo>.title{
+        font-size: 20px;
+    }
+    .subinfo{
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*シェア*/
+.share{
+    margin: 50px;
+}
+
+.comment{
+    color: #462401;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.icon{
+    text-align: center;
+    padding: 20px;
+}
+
+.icon > a {
+    margin: 5px;
+}
+
+
+@media screen and (max-width:768px){
+    .icon img{
+        width: 50px;
+        filter: drop-shadow(10,10,10,#333)
+    }
+}
+
+
+
+
+
+/*footer*/
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+

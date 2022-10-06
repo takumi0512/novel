@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Noto Sans JP',"Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #dacebf;
+}
+
+
+/*header*/
+.header{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    color: #888;
+    background-color: rgba(17, 17, 17, 0.85);
+}
+.header > h1{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header >h1 >a{
+    font-size: 20px;
+    color: #888;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+}
+.header >h1> a:hover{
+    border-bottom: 2px solid #888;
+}
+
+.header-right{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-item > a{
+    display: block;
+    padding: 10px;
+    color:#888;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+}
+.header-item > a:hover{
+    border-bottom: 2px solid #888;
+}
+
+
+
+/* top */
+.hero{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.headcopy{
+    position: absolute;
+    top: 10%;
+    font-size: 30px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+@media screen and (max-width:768px){
+    .headcopy{
+        font-size: 20px;
+        top: 15%;
+    }
+}
+
+.hero > strong{
+    position: absolute;
+    top: 18%;
+    font-size: 90px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px){
+    .hero > strong{
+        font-size: 48px;
+        top: 30%;
+    }
+}
+
+.hero >img{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.copy{  
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    font-size: 43px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+}
+@media screen and (max-width:768px){
+    .copy{
+        font-size: 25px;
+        top: 50%;
+    }
+}
+
+.hero-button{
+    position: absolute;
+    top: 75%;
+    z-index: 4;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    .hero-button{
+        top: 87%;
+    }
+}
+.hero-button > a{
+    font-size: 30px;
+    font-weight: bold;
+    color: #eee;
+    background-color: #250b00;
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 8px 8px 0 rgba(93, 87, 87, 0.575);
+    transition: box-shadow .25s;
+}
+@media screen and (max-width:768px){
+    .hero-button > a{
+        font-size: 15px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}
+.hero-button >a:hover{
+    box-shadow:0 0 0 #bbb
+}
+
+
+
+/*背景*/
+
+
+#background{
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: calc(10 * 1px) calc(10 * 1px);
+    color:#c0ae9a;
+}
+
+
+
+
+
+/*　質問 */
+
+.section{
+    padding: 50px 20px 20px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media screen and (max-width:768px){
+    .section{
+        padding: 20px;
+    } 
+}
+
+.section-headline{
+    text-align: center;
+    color: #f4ede6;
+    background-color: #5a3a1a;
+    margin: 0 0 30px 0;
+    padding: 10px;
+    border-radius: 15px;
+
+    position: relative;
+}
+.section-headline::after{
+    position: absolute;
+    top: 100%;
+    left: 100px;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top: 23px solid #5a3a1a;
+}
+@media screen and (max-width:768px){
+    .section-headline{
+        font-size: 17px;
+        padding: 10px 0px;
+    }
+    .section-headline::after{
+        left: 50px;
+    }
+}
+
+.table{
+    background-color:#f5f5d1;
+    font-size: 18px;
+}
+@media screen and (max-width:768px){
+    .table{
+        font-size: 15px;
+    }
+}
+
+td{
+    color: #333;
+}
+
+.answerhead{
+    background-color: #654d34;
+    color: #e5ded7;
+    font-size: 8px;
+}
+
+.quesition{
+    width: 50%;;
+}
+.answer{
+    width: 10%;
+}
+.row2{
+    background-color:#d0bca7;
+}
+
+.radiobox{
+    text-align: center;
+}
+.radiobox > input{
+    transform: scale(2);
+    accent-color: #654d34;
+}
+@media screen and (max-width:768px){
+    .radiobox > input{
+        transform:scale(1.5);
+    }
+}
+
+
+/*アンケート*/
+.ank{
+    display: flex;
+    justify-content: center;
+    color: #333;
+    font-size: 20px;
+
+}
+.old{
+    margin: 10px;
+    text-align: center;
+}
+.gender{
+    margin: 10px;
+    text-align: center;
+}
+
+.old > select , .gender>select{
+    transform: scale(1.5);
+    margin: 0;
+    background-color:#e5ded7;
+    color: #333;
+}
+
+
+/*ボタン*/
+
+.section-button{
+    margin: 40px;
+    text-align: center;
+}
+
+.button{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #250b00;
+    text-align: center;
+    padding: 15px 60px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0 #bbb;
+    transition: box-shadow .25s;
+}
+@media screen and (max-width:768px){
+    .button{
+        font-size: 17px;
+        padding: 10px 20px;
+    }
+}
+@media screen and (min-width:768px){
+    .br{
+        display: none;
+    }
+}
+.button:hover{
+    box-shadow:0 0 0 #bbb
+}
+
+
+
+
+/*footer*/
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}

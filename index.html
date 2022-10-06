@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="text">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sanitize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <h1><a href="#">小説おすすめ診断</a></h1>
+        <nav>
+            <ul class="header-right">
+                <li class="header-item">
+                    <a href="">about</a>
+                </li>
+                <li class="header-item">
+                    <a href="" onclick="window.alert('commnig soon!')">漫画</a>
+                </li>
+                <li class="header-item">
+                    <a href="" onclick="window.alert('commming soon!')">アニメ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="hero">
+        <p class="headcopy">-Best book for you-</p>
+        <strong>小説おすすめ診断</strong>
+        <p class="copy">あなたにピッタリの一冊を</p>
+        <div class="hero-button">
+            <a href="#background">診断スタート</a>
+        </div>
+        <img src="./image/alfons-morales-YLSwjSy7stw-unsplash.jpg" alt="">       
+    </div>
+
+
+
+
+    <div id="background">
+
+    <section class="section">
+        <h1 class="section-headline">質問に答えて今のあなたにピッタリの一冊を</h1>
+
+        <form action="./index2.html" method="get" name="ank">
+            <table class="table" >
+                    <tr class="answerhead">
+                        <th class="question"></th>
+                        <th class="answer">当てはまる</th>
+                        <th class="answer">どちらかと言えば当てはまる</th>
+                        <th class="answer">どちらでもない</th>
+                        <th class="answer">どちらかと言えば当てはまらない</th>
+                        <th class="answer">当てはまらない</th>
+                    </tr>
+                    <tr>
+                        <td class="question">じっくりと時間をかけて小説を読みたい</td>
+                        <div class="answerbox">
+                            <td class="radiobox">
+                                <input type="radio" name="q1" value="10">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q1" value="7">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q1" value="5">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q1" value="2">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q1" value="0">
+                            </td>
+                        </div> 
+                    </tr>
+                    <tr class="row2">
+                        <td class="question">考えさせられるような小説を読みたい</td>
+                        <div class="answerbox">
+                            <td class="radiobox">
+                                <input type="radio" name="q2" value="10">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q2" value="7">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q2" value="5">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q2" value="2">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q2" value="0">
+                            </td>
+                        </div> 
+                    </tr>
+                    <tr>
+                        <td class="question">起承転結のはっきりとした分かりやすい小説が読みたい</td>
+                        <div class="answerbox">
+                            <td class="radiobox">
+                                <input type="radio" name="q3" value="10">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q3" value="8">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q3" value="6">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q3" value="2">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q3" value="0">
+                            </td>
+                        </div> 
+                    </tr>
+                    <tr class="row2">
+                        <td class="question">所謂青春小説のような爽やかさが欲しい</td>
+                        <div class="answerbox">
+                            <td class="radiobox">
+                                <input type="radio" name="q4" value="10">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q4" value="8">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q4" value="5">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q4" value="2">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q4" value="0">
+                            </td>
+                        </div> 
+                    </tr>
+                    <tr>
+                        <td class="question">普段からよく小説を読む方だ</td>
+                        <div class="answerbox">
+                            <td class="radiobox">
+                                <input type="radio" name="q5" value="10">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q5" value="7">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q5" value="5">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q5" value="2">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q5" value="0">
+                            </td>
+                        </div> 
+                    </tr>
+                    <tr class="row2">
+                        <td class="question">余韻が残るような重厚な小説が読みたい</td>
+                        <div class="answerbox">
+                            <td class="radiobox">
+                                <input type="radio" name="q6" value="5">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q6" value="3">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q6" value="1">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q6" value="0">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q6" value="0">
+                            </td>
+                        </div> 
+                    </tr>
+                    <tr>
+                        <td class="question">ミステリーやサスペンスのような大きな事件が起きてほしい</td>
+                        <div class="answerbox">
+                            <td class="radiobox">
+                                <input type="radio" name="q7" value="8">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q7" value="7">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q7" value="5">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q7" value="2">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q7" value="0">
+                            </td>
+                        </div> 
+                    </tr>
+                    <tr class="row2">
+                        <td class="question">読後に感傷に浸るよりは爽快感を得たい</td>
+                        <div class="answerbox">
+                            <td class="radiobox">
+                                <input type="radio" name="q8" value="7">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q8" value="5">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q8" value="3">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q8" value="2">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q8" value="0">
+                            </td>
+                        </div> 
+                    </tr>
+                    <tr>
+                        <td class="question">コーヒーやタバコなどと共に小説を読みたい</td>
+                        <div class="answerbox">
+                            <td class="radiobox">
+                                <input type="radio" name="q9" value="5">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q9" value="3">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q9" value="1">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q9" value="0">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q9" value="0">
+                            </td>
+                        </div> 
+                    </tr>
+                    <tr class="row2">
+                        <td class="question">カタルシスを味わいたい</td>
+                        <div class="answerbox">
+                            <td class="radiobox">
+                                <input type="radio" name="q10" value="10">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q10" value="7">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q10" value="5">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q10" value="2">
+                            </td>
+                            <td class="radiobox">
+                                <input type="radio" name="q10" value="0">
+                            </td>
+                        </div> 
+                    </tr>
+
+            </table>
+
+
+            <div class="ank">
+                <div class="old">
+                    <p>あなたの年齢は</p>
+                    <select name="" id="">
+                        <option value="">選択肢</option>
+                        <option value="">10代</option>
+                        <option value="">20代</option>
+                        <option value="">30代</option>
+                        <option value="">40代</option>
+                        <option value="">50代</option>
+                        <option value="">60代</option>
+                        <option value="">70代</option>
+                        <option value="">80代</option>
+                    </select>
+                </div>
+                <div class="gender">
+                    <p>あなたの性別は</p>
+                    <select name="" id="">
+                        <option value="">選択肢</option>
+                        <option value="">男性</option>
+                        <option value="">女性</option>
+                        <option value="">その他</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="section-button">
+                <button id="button-last" class="button" type="button">あなたにおすすめの<br class="br">小説はこちら</button>
+            </div>
+
+        </form>
+    </section>
+
+    </div>
+    
+    <footer>
+        <small>copyright</small>
+    </footer>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
